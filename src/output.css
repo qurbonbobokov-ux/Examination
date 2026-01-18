@@ -8,7 +8,9 @@
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-blue-700: oklch(48.8% 0.243 264.376);
+    --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-gray-100: oklch(96.7% 0.003 264.542);
+    --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-gray-600: oklch(44.6% 0.03 256.802);
     --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-black: #000;
@@ -258,6 +260,9 @@
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
+  .h-44 {
+    height: calc(var(--spacing) * 44);
+  }
   .h-\[70px\] {
     height: 70px;
   }
@@ -266,6 +271,9 @@
   }
   .h-\[268px\] {
     height: 268px;
+  }
+  .h-\[402px\] {
+    height: 402px;
   }
   .h-\[615px\] {
     height: 615px;
@@ -279,8 +287,17 @@
   .w-8 {
     width: calc(var(--spacing) * 8);
   }
+  .w-44 {
+    width: calc(var(--spacing) * 44);
+  }
   .w-\[40\%\] {
     width: 40%;
+  }
+  .w-\[50\%\] {
+    width: 50%;
+  }
+  .w-\[50\] {
+    width: 50;
   }
   .w-\[50px\] {
     width: 50px;
@@ -309,6 +326,9 @@
   .w-\[370px\] {
     width: 370px;
   }
+  .w-\[378px\] {
+    width: 378px;
+  }
   .w-\[380px\] {
     width: 380px;
   }
@@ -323,6 +343,9 @@
   }
   .max-w-7xl {
     max-width: var(--container-7xl);
+  }
+  .flex-shrink-0 {
+    flex-shrink: 0;
   }
   .flex-grow {
     flex-grow: 1;
@@ -446,6 +469,9 @@
   .bg-\[\#f8f4f4\] {
     background-color: #f8f4f4;
   }
+  .bg-\[gray-50\] {
+    background-color: gray-50;
+  }
   .bg-black\/1 {
     background-color: color-mix(in srgb, #000 1%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -457,6 +483,9 @@
     @supports (color: color-mix(in lab, red, red)) {
       background-color: color-mix(in oklab, var(--color-black) 60%, transparent);
     }
+  }
+  .bg-gray-50 {
+    background-color: var(--color-gray-50);
   }
   .bg-gray-100 {
     background-color: var(--color-gray-100);
@@ -484,6 +513,9 @@
   }
   .bg-no-repeat {
     background-repeat: no-repeat;
+  }
+  .object-cover {
+    object-fit: cover;
   }
   .p-3 {
     padding: calc(var(--spacing) * 3);
@@ -653,6 +685,9 @@
   .text-blue-700 {
     color: var(--color-blue-700);
   }
+  .text-gray-500 {
+    color: var(--color-gray-500);
+  }
   .text-gray-600 {
     color: var(--color-gray-600);
   }
@@ -661,6 +696,9 @@
   }
   .text-white {
     color: var(--color-white);
+  }
+  .italic {
+    font-style: italic;
   }
   .shadow {
     --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
